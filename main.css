@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+
+/* In earlier version of tailwind we have to create a tailwind.config.js and define things there, but now we have to create another themes file and import here */
+@import "./theme.css"
