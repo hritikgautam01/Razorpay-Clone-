@@ -8,6 +8,11 @@
     <link rel="icon" href="./Images/favicon.png">
     <link rel="stylesheet" href="main.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
     <style>
       .corefeaturesection{
         background-size: 100% 100%;
@@ -16,7 +21,11 @@
       }
 
       .moveImage{
-        animation: 10s infinite linear moveCompany;
+        animation: 15s infinite linear moveCompany;
+      }
+
+      .ctaSection{
+        background-size: 100% 100%;
       }
 
       @keyframes moveCompany {
@@ -1094,7 +1103,7 @@
 
 
         <!-- Testimonial section -->
-        <section class="relative">
+        <section class="relative ">
 
           <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
             <img src="./Images/feature-section1-dottedrows.png" alt="" class="absolute w-[200px] top-[8rem] left-[2rem] -z-10">
@@ -1149,10 +1158,67 @@
           </div>
         </section>
 
+
+        <!-- Notes - Background size wasnt working perfectly so we created another custom css and used background-size 100% for both width and height-->
         
 
-      
+        <!-- CTA section -->
+        <section class="bg-[url(./Images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[510px] flex justify-center items-center">
+          <!-- Main content box -->
+          <div class="w-11/12 max-w-[1080px] relative flex flex-row items-center justify-between space-x-20 mx-auto">
+
+            <!-- left part -->
+            <div class="space-y-5 max-w-[600px]">
+              <h2 class="font-mullish font-bold text-2xl text-white">Supercharge your business with Razorpay</h2>
+              <div class="w-6 h-1 bg-greenLight"></div>
+              <p class="font-mullish text-white">Sign up now to experience the future of payments and offer <br> your customers the best checkout experiences.</p>
+
+              <ul class="flex flex-row gap-x-11 text-white flex-wrap gap-y-3">
+                <li class="font-mullish text-white flex ">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>Quick onboarding</span>
+                </li>
+                <li class="font-mullish text-white flex">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>Access the entire product suite</span>
+                </li>
+                <li class="flex flex-row gap-1 space-y-2 text-white">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>API access</span>
+                </li>
+                <li class="flex flex-row gap-1 space-y-2 text-white">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>24x7 Support</span>
+                </li>
+              </ul>
+
+              <button
+              class="min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue300 border flex
+              rounded-sm items-center hover:text-lightBlue500 transition-all duration-200 py-3 px-4 place-self-start">
+              Sign Up
+              <svg
+              viewBox="0 0 24 24"
+              focusable="false"
+              class="w-[14px] h-[14px] ml-3"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12      20l8-8z"
+                ></path>
+              </svg>
+              </button>
+            </div>
+
+            <!-- Right side waali image -->
+            <img src="./Images/ctaImg.svg" alt=""
+            width="240px" height="282px" class="mt-11" >
+
+          </div>
+        </section>
   </div>
+  
+
+  <!-- Footer section -->
   
 
 
